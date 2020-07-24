@@ -137,8 +137,8 @@ body {
 }
 
 .header-icon-mail-svg {
-  fill: var(--primary-text-color);
-
+  /* fill: var(--primary-text-color); */
+  --color3: var(--primary-text-color);
   width: 16px;
   height: 11px;
   margin-right: 10px;
@@ -147,7 +147,7 @@ body {
 }
 
 .header-icon-phone-svg {
-  fill: var(--primary-text-color);
+  --color5: var(--primary-text-color);
 
   width: 10px;
   height: 15px;
@@ -156,7 +156,8 @@ body {
 
 .nav-contacts-item:hover .header-icon-mail-svg,
 .nav-contacts-item:hover .header-icon-phone-svg {
-  fill: var(--accent-color);
+  --color3: var(--accent-color);
+  --color5: var(--accent-color);
 }
 
 .main-page::after {
@@ -189,6 +190,7 @@ body {
 .footer .nav-contacts-link:focus,
 .footer .nav-contacts-link:hover {
   background-color: var(--accent-color);
+  --color1: var(--primary-white-color);
 }
 
 .nav-contacts {
@@ -297,8 +299,7 @@ body {
   padding-right: 100px;
   width: 270px;
   height: 120px;
-  left: 215px;
-  top: 774px;
+
   border-radius: 4px;
   background-color: var(--background-button);
 }
@@ -411,6 +412,12 @@ body {
   height: 44px;
   left: 247px;
   top: 2139px;
+}
+
+.social-img {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 .social-team-list-links .social-team-item:not(:last-child) {
