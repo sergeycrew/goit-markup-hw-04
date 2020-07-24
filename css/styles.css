@@ -138,7 +138,6 @@ body {
 }
 
 .header-icon-mail-svg {
-  /* fill: var(--primary-text-color); */
   --color3: var(--primary-text-color);
   width: 16px;
   height: 11px;
@@ -557,7 +556,6 @@ body {
   height: 86px;
 }
 
-
 .footer-form-button {
   display: flex;
   justify-content: center;
@@ -566,7 +564,7 @@ body {
   margin-left: 12px;
   width: 200px;
   height: 50px;
- border-style: none;
+  border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--accent-color);
@@ -574,7 +572,8 @@ body {
 
 .icon-send-svg {
   margin-left: 10px;
- 
+}
+
 /* portfolio */
 
 /* portfolio buttons */
@@ -588,6 +587,7 @@ body {
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
+  border-style: none;
   line-height: 1, 62;
   text-align: center;
   color: var(--title-text-color);
@@ -626,8 +626,6 @@ body {
   box-sizing: border-box;
   width: 370px;
   height: 404px;
-  background: var(--primary-white-color);
-  border: 1px solid var(--background-portfolio-item);
 
   /* outline: 2px solid tomato; */
 }
@@ -657,12 +655,23 @@ body {
 }
 
 .portfolio-description-container {
+  box-sizing: border-box;
   width: 370px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  background: var(--primary-white-color);
+  border-right: 1px solid var(--background-portfolio-item);
+  border-bottom: 1px solid var(--background-portfolio-item);
+  border-left: 1px solid var(--background-portfolio-item);
   /* outline: 2px solid violet; */
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list-description {
