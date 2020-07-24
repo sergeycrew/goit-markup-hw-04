@@ -17,6 +17,7 @@
   --footer-white: rgba(255, 255, 255, 0.6);
   --backgroung-second: #afb1b8;
   --background-footer: #2f303a;
+  --background-footer-social: rgba(255, 255, 255, 0.1);
   --background-button: #f5f4fa;
   --background-portfolio-item: #eeeeee;
   --background-services: rgba(47, 48, 58, 0.8);
@@ -155,7 +156,9 @@ body {
 }
 
 .nav-contacts-item:hover .header-icon-mail-svg,
-.nav-contacts-item:hover .header-icon-phone-svg {
+.nav-contacts-item:hover .header-icon-phone-svg,
+.nav-contacts-item:focus .header-icon-mail-svg,
+.nav-contacts-item:focus .header-icon-phone-svg {
   --color3: var(--accent-color);
   --color5: var(--accent-color);
 }
@@ -172,8 +175,6 @@ body {
 .site-link:focus,
 .nav-contacts-link:hover,
 .nav-contacts-link:focus,
-.clients-link:hover,
-.clients-link:focus,
 .site-nav .current-site {
   color: var(--accent-color);
 }
@@ -472,6 +473,15 @@ body {
   border-radius: 4px;
 }
 
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg {
+  --color1: var(--accent-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
 /* footer*/
 
 .footer {
@@ -495,10 +505,6 @@ body {
   height: 81px;
 }
 
-.footer-social-container {
-  margin-top: 12px;
-}
-
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -519,6 +525,8 @@ body {
 }
 
 .footer-social-container {
+  margin-top: 12px;
+  margin-right: 94px;
   width: 206px;
   height: 80px;
 }
@@ -533,9 +541,40 @@ body {
   display: flex;
 }
 
+.footer .nav-contacts-link {
+  background-color: var(--background-footer-social);
+}
+
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
+
+.footer-form {
+  display: flex;
+  margin-top: 12px;
+
+  width: 570px;
+  height: 86px;
+}
+
+
+.footer-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34px;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+ border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+}
+
+.icon-send-svg {
+  margin-left: 10px;
+ 
 /* portfolio */
 
 /* portfolio buttons */

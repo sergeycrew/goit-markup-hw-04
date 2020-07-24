@@ -296,37 +296,62 @@
           <b class="footer-description">присоединяйтесь</b>
           <ul class="footer-social-list list">
             <li class="footer-social-item">
-              <a href="" aria-label="иконка твиттера" class="nav-contacts-link"
-                ><img
-                  src="./images/social-links/social-twitter.svg"
-                  alt="иконка твиттера"
-              /></a>
-            </li>
-            <li class="footer-social-item">
               <a
                 href=""
                 aria-label="иконка инстаграмма"
                 class="nav-contacts-link"
-                ><img
-                  src="./images/social-links/social-instagram.svg"
-                  alt="иконка инстаграмма"
-              /></a>
+                ><svg class="social-img">
+                  <use
+                    href="./images/sprite.svg#icon-social-instagram"
+                    aria-label="иконка инстаграмма"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" aria-label="иконка твиттера" class="nav-contacts-link"
+                ><svg class="social-img">
+                  <use
+                    href="./images/sprite.svg#icon-social-twitter"
+                    aria-label="иконка твиттера"
+                  ></use></svg
+              ></a>
             </li>
             <li class="footer-social-item">
               <a href="" aria-label="иконка фейсбука" class="nav-contacts-link"
-                ><img
-                  src="./images/social-links/social-facebook.svg"
-                  alt="иконка фейсбука"
-              /></a>
+                ><svg class="social-img">
+                  <use
+                    href="./images/sprite.svg#icon-social-facebook"
+                    aria-label="иконка фейсбука"
+                  ></use></svg
+              ></a>
             </li>
             <li class="footer-social-item">
               <a href="" aria-label="иконка ликедина" class="nav-contacts-link"
-                ><img
-                  src="./images/social-links/social-linkedin.svg"
-                  alt="иконка ликедина"
-              /></a>
+                ><svg class="social-img">
+                  <use
+                    href="./images/sprite.svg#icon-social-linkedin"
+                    aria-label="иконка ликедина"
+                  ></use></svg
+              ></a>
             </li>
           </ul>
+        </div>
+        <div class="footer-form">
+          <div class="input-form">
+            <b class="footer-description">Подпишитесь на рассылку</b>
+            <form width="358px" height="50px">
+              <p><input name="E-mail" /></p>
+            </form>
+          </div>
+          <button class="button footer-form-button" type="submit">
+            Подписаться
+            <svg class="icon-send-svg" width="24" height="24px">
+              <use
+                href="./images/sprite.svg#icon-icon-send"
+                aria-label="иконка самолётика"
+              ></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
