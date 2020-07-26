@@ -156,8 +156,8 @@ body {
 
 .nav-contacts-item:hover .header-icon-mail-svg,
 .nav-contacts-item:hover .header-icon-phone-svg,
-.nav-contacts-item:focus .header-icon-mail-svg,
-.nav-contacts-item:focus .header-icon-phone-svg {
+.nav-contacts-link:focus .header-icon-mail-svg,
+.nav-contacts-link:focus .header-icon-phone-svg {
   --color3: var(--accent-color);
   --color5: var(--accent-color);
 }
@@ -615,6 +615,11 @@ body {
   padding-bottom: 94px;
 }
 
+.portfolio-item-link {
+  display: block;
+  outline: none;
+}
+
 .portfolio-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -669,7 +674,7 @@ body {
 }
 
 .portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
